@@ -12,7 +12,11 @@ body { /* to style main text content in body tag */
 
 h1 {
     font-size: 36px;
-    z-index: 1; 
+    z-index: 1;
+}
+
+.menu-title {
+    font-size: 36px;
 }
 
 video {
@@ -295,6 +299,13 @@ button {
 
 /* MOBILE CSS (Just to fix Navbar when below 680px) */
 @media screen and (max-width: 680px) { 
+
+    /*NAVIGATION*/
+
+    .menu-title {
+        font-size: 50px;
+    }
+
     .navigation {
         flex-direction: column;
         align-items: center;
@@ -302,12 +313,38 @@ button {
     }
 
     .navigation ul {
+        display: none;
         flex-direction: column;
         margin-top: 10px;
     }
 
     .navigation li {
         margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 38px;
+        margin-top: -10px;
+        transition: transform 0.5s ease; 
+    }
+
+    /* For rotating the menu icon */
+    .menu-toggle.rotate {
+        transform: rotate(90deg);
+    }
+
+}
+
+/* Hide the hamburger icon when not in mobile size */
+@media screen and (min-width: 681px) { 
+    .menu-toggle {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex !important; /* to ensure the menu is visible */
     }
 }
 
