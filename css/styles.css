@@ -298,7 +298,7 @@ button {
 
 
 /* MOBILE CSS (Just to fix Navbar when below 680px) */
-@media screen and (max-width: 680px) { 
+@media screen and (max-width: 768px) { 
 
     /*NAVIGATION*/
 
@@ -325,7 +325,7 @@ button {
     .menu-toggle {
         display: block;
         cursor: pointer;
-        font-size: 38px;
+        font-size: 28px;
         margin-top: -10px;
         transition: transform 0.5s ease; 
     }
@@ -338,7 +338,7 @@ button {
 }
 
 /* Hide the hamburger icon when not in mobile size */
-@media screen and (min-width: 681px) { 
+@media screen and (min-width: 769px) { 
     .menu-toggle {
         display: none;
     }
