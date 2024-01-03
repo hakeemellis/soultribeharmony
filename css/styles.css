@@ -332,7 +332,7 @@ button {
         margin: 10px 0;
     }
 
-    .menu-toggle {
+    .menu-toggle { /* for hamburger menu */
         display: block;
         cursor: pointer;
         font-size: 27px;
@@ -343,6 +343,16 @@ button {
     /* For rotating the menu icon */
     .menu-toggle.rotate {
         transform: rotate(90deg);
+    }
+
+
+    /* FOOTER */
+
+    .footy{
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
     }
 
 }
