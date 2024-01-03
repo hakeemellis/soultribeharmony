@@ -205,6 +205,11 @@ iframe { /* for youtube video */
     text-align: center; 
 }
 
+.work-sample img{
+    max-width: 85%;
+    height: auto;
+}
+
 .work-sample h4 {
     color: #ff9900;
     margin-bottom: 10px;
